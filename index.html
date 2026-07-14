@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+    <html lang="pt-BR"> 
+        <head> 
+            <meta charset="UTF-8"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <link rel="stylesheet" href="assets/styles/index.css"> 
+            <title>Cadastro</title> 
+        </head> 
+        <body> 
+            <header> 
+                <h1>Formulário de Cadastro</h1> 
+                <p>Cadastre-se para poder efetuar a compra do seu produto</p> 
+                <button id="btnSaibaMais">Saiba Mais</button> 
+            </header> 
+            <form id="form-cep" class="formulario"> 
+                <section class="cep"> 
+                    <h2>Consultar CEP para frete</h2> 
+                    <input type="text" placeholder="Digite seu CEP"> 
+                    <h5>Rua</h5> 
+                    <input type="text" id="logradouro"> 
+                    <h5>Bairro</h5> 
+                    <input type="text" id="bairro"> 
+                    <h5>Cidade</h5>
+                    <input type="text" id="cidade"> 
+                    <h5>UF</h5> 
+                    <input type="text" id="uf">
+                    <button onclick="buscarCep()">Buscar</button>
+                    <div id="resultado"></div>
+                </section> 
+                <section class="contato"> 
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Email">
+                        <textarea placeholder="Mensagem"></textarea>
+                        <button type="submit">Enviar</button> 
+                </section> 
+            </form> 
+            <script src="/assets/js/index.js"></script> 
+        </body> 
+    </html>
