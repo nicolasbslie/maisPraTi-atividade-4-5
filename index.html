@@ -15,7 +15,7 @@
             <form id="form-cep" class="formulario"> 
                 <section class="cep"> 
                     <h2>Consultar CEP para frete</h2> 
-                    <input type="text" placeholder="Digite seu CEP"> 
+                    <input type="text" id="cep" placeholder="Digite seu CEP"> 
                     <h5>Rua</h5> 
                     <input type="text" id="logradouro"> 
                     <h5>Bairro</h5> 
@@ -24,7 +24,7 @@
                     <input type="text" id="cidade"> 
                     <h5>UF</h5> 
                     <input type="text" id="uf">
-                    <button onclick="buscarCep()">Buscar</button>
+                    <button type="button" id="btnBuscar">Buscar</button>
                     <div id="resultado"></div>
                 </section> 
                 <section class="contato"> 
@@ -34,6 +34,6 @@
                         <button type="submit">Enviar</button> 
                 </section> 
             </form> 
-            <script src="/assets/js/index.js"></script> 
+            <script type="module" src="/assets/js/index.js"></script> 
         </body> 
     </html>
